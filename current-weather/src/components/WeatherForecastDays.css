@@ -1,0 +1,57 @@
+.forecast-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 20px;
+  color: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  margin-top: 20px;
+  transition: background 0.5s ease;
+  text-align: center;
+}
+
+.forecast-card.day {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.forecast-card.night {
+  background: rgba(0, 0, 40, 0.4);
+}
+
+.forecast-card h3 {
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.forecast-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.forecast-item {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px;
+  border-radius: 12px;
+  transition: background 0.3s ease;
+}
+
+.forecast-item:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.forecast-date {
+  font-weight: bold;
+  margin: 0;
+  font-size: 16px;
+}
+
+.forecast-temp {
+  margin: 5px 0;
+  font-size: 15px;
+}
+
+.forecast-humidity {
+  font-size: 13px;
+  opacity: 0.8;
+}

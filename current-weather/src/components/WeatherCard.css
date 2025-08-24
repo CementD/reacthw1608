@@ -1,0 +1,79 @@
+.weather-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  transition: background 0.5s ease;
+}
+
+.weather-card.day {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.weather-card.night {
+  background: rgba(0, 0, 40, 0.4);
+}
+
+.weather-main {
+  margin-bottom: 20px;
+}
+
+.temperature {
+  font-size: 80px;
+  margin: 0;
+}
+
+.description {
+  font-size: 22px;
+  text-transform: capitalize;
+  margin: 5px 0;
+}
+
+.city {
+  font-size: 26px;
+  margin: 5px 0;
+}
+
+.feels {
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.time {
+  font-size: 14px;
+  opacity: 0.7;
+  margin-top: 8px;
+}
+
+.weather-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px;
+  border-radius: 12px;
+  transition: background 0.3s ease;
+}
+
+.detail-item:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.detail-item img {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 5px;
+}
+
+.detail-item span {
+  font-size: 14px;
+}

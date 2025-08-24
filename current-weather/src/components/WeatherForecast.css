@@ -1,0 +1,141 @@
+.app {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  background-color: var(--bg-color);
+  transition: background-color 0.5s ease;
+}
+
+.app.day {
+  --bg-color: #87ceeb;
+}
+
+.app.night {
+  --bg-color: #0b1e3d;
+}
+
+.sidebar-toggle {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  background: transparent;
+  border: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 260px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(8px);
+  color: white;
+  padding: 20px;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.3);
+  transition: left 0.4s ease;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.sidebar.day {
+  background-color: rgba(0, 0, 80, 0.3);
+}
+
+.sidebar.night {
+  background-color: rgba(0, 0, 50, 0.5);
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar h3 {
+  margin-top: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  cursor: pointer;
+}
+
+.sidebar li:hover {
+  opacity: 0.8;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.main-content {
+  flex: 1;
+  padding: 60px 20px;
+  color: white;
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+form input {
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+form button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.fav-btn {
+  margin-top: 15px;
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  color: white;
+  cursor: pointer;
+}
+
+.fav-btn.active {
+  background: yellow;
+  color: black;
+  font-weight: bold;
+}
+
+
+.error {
+  color: #ff8080;
+}
